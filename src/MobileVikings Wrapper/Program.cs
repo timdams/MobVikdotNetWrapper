@@ -9,7 +9,6 @@ namespace MobileVikings_Wrapper
     {
         static void Main(string[] args)
         {
-
             //Example usage
             var mainModel= new MobVikDataModel("username", "password");
 
