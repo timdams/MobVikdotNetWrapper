@@ -17,7 +17,7 @@ namespace MobileVikings_Wrapper
         public MobVikDataModel(string username, string password)
         {
             _webclient = new WebClient();
-            //Gallantly stolen from: //http://mobilevikingsdata.codeplex.com/SourceControl/changeset/view/56993#1076285
+            //Gallantly copied from: //http://mobilevikingsdata.codeplex.com/SourceControl/changeset/view/56993#1076285
             string base64Creds =
                 Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}", username, password)));
             _webclient.Headers["Authorization"] = "Basic " + base64Creds;
